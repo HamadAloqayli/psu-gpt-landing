@@ -574,8 +574,11 @@ strong {
 }
 
 .custom-block-overlay {
-  height: 300px;
-  padding: 0;
+  background-image: url("../images/riotu_landscape.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 .custom-block-overlay > a {
@@ -590,7 +593,7 @@ strong {
 }
 
 .custom-block-overlay-text {
-  position: absolute;
+  position: relative;
   z-index: 2;
   top: 0;
   right: 0;
@@ -600,7 +603,7 @@ strong {
 
 .custom-block-overlay-text img {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
 }
 
 .social-share {
@@ -772,7 +775,7 @@ blockquote {
 }
 
 .timeline-container .vertical-scrollable-timeline li p {
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .timeline-container .vertical-scrollable-timeline li p:last-child {
@@ -1132,6 +1135,31 @@ blockquote {
 }
 
 @media screen and (max-width: 480px) {
+  .timeline-container .vertical-scrollable-timeline .list-progress {
+    width: 5px;
+    left: 30px;
+  }
+  .timeline-container .vertical-scrollable-timeline li .icon-holder {
+    left: 5px;
+    width: 52px;
+    height: 52px;
+  }
+  .timeline-container .vertical-scrollable-timeline li .icon-holder::before {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+  }
+  .timeline-container .vertical-scrollable-timeline li .icon-holder i {
+    font-size: 20px;
+  }
+
+  .timeline-container .vertical-scrollable-timeline li::before {
+    width: 5px;
+    left: 30px;
+  }
+  .timeline-container .vertical-scrollable-timeline li {
+    padding-left: 75px;
+  }
   h1 {
     font-size: 36px;
   }
