@@ -10,15 +10,15 @@ https://templatemo.com/tm-590-topic-listing
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color: #ffffff;
-  --primary-color: #13547a;
-  --secondary-color: #80d0c7;
-  --section-bg-color: #f0f8ff;
-  --custom-btn-bg-color: #80d0c7;
-  --custom-btn-bg-hover-color: #13547a;
-  --dark-color: #000000;
+  --white-color: #FCFCFC;
+  --primary-color: #C8C8C8;
+  --secondary-color: #171729;
+  --section-bg-color: #FCFCFC;
+  --custom-btn-bg-color: #FCFCFC;
+  --custom-btn-bg-hover-color: #22223B;
+  --dark-color: #22223B;
   --p-color: #717275;
-  --border-color: #7fffd4;
+  /* --border-color: #7fffd4; */
   --link-hover-color: #13547a;
 
   --body-font-family: "Open Sans", sans-serif;
@@ -154,7 +154,7 @@ strong {
 }
 
 .section-overlay {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: linear-gradient(15deg, #22223B 0%, #585C76 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -230,6 +230,17 @@ strong {
   background: var(--custom-btn-bg-hover-color);
   color: var(--white-color);
 }
+/* Normal state style */
+.btn {
+  color: #22223B; /* Original color for the button text */
+  /* Add other styles as needed */
+}
+
+/* Hover state style */
+.btn:hover {
+  color: #FCFCFC; /* Black color for the button text on hover */
+}
+
 
 .custom-border-btn {
   background: transparent;
@@ -252,7 +263,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  /* background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); */
   padding-top: 150px;
   padding-bottom: 80px;
 }
@@ -490,7 +501,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: linear-gradient(15deg, #22223B 0%, #4A4E69 100%);
   position: relative;
   overflow: hidden;
   padding-top: 150px;
@@ -522,6 +533,8 @@ strong {
   color: var(--white-color);
   max-width: 150px;
 }
+
+
 
 /*---------------------------------------
   TOPICS              
@@ -621,19 +634,19 @@ strong {
   color: var(--secondary-color);
 }
 
-.bg-design {
+/* .bg-design {
   background-color: #00b0ff;
-}
+} */
 
-.bg-graphic {
+/* .bg-graphic {
   background-color: #00bfa6;
-}
+} */
 
-.bg-advertising {
+/* .bg-advertising {
   background-color: #f50057;
-}
+} */
 
-.bg-finance {
+/* .bg-finance {
   background-color: #536dfe;
 }
 
@@ -643,7 +656,7 @@ strong {
 
 .bg-education {
   background-color: #00bfa6;
-}
+} */
 
 /*---------------------------------------
   TOPICS               
@@ -829,7 +842,7 @@ blockquote {
   .vertical-scrollable-timeline
   li.active
   .icon-holder::before {
-  background-color: var(--primary-color);
+  background-color: var(--p-color);
 }
 
 /*---------------------------------------
@@ -837,11 +850,14 @@ blockquote {
 -----------------------------------------*/
 .faq-section .accordion-item {
   border: 0;
+  color: var(--dark-color);
 }
 
 .faq-section .accordion-button {
   font-size: var(--h6-font-size);
   font-weight: var(--font-weight-semibold);
+  color: var(--white-color);
+
 }
 
 .faq-section .accordion-item:first-of-type .accordion-button {
@@ -851,7 +867,7 @@ blockquote {
 .faq-section .accordion-button:not(.collapsed) {
   border-radius: var(--border-radius-large);
   box-shadow: none;
-  color: var(--primary-color);
+  
 }
 
 .faq-section .accordion-body {
@@ -947,7 +963,7 @@ blockquote {
 }
 
 .site-footer-title {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 .site-footer .dropdown-menu {
