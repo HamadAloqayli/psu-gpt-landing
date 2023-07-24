@@ -10,13 +10,13 @@ https://templatemo.com/tm-590-topic-listing
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color: #FCFCFC;
-  --primary-color: #C8C8C8;
+  --white-color: #fcfcfc;
+  --primary-color: #c8c8c8;
   --secondary-color: #171729;
-  --section-bg-color: #FCFCFC;
-  --custom-btn-bg-color: #FCFCFC;
-  --custom-btn-bg-hover-color: #22223B;
-  --dark-color: #22223B;
+  --section-bg-color: #fcfcfc;
+  --custom-btn-bg-color: #fcfcfc;
+  --custom-btn-bg-hover-color: #22223b;
+  --dark-color: #22223b;
   --p-color: #717275;
   /* --border-color: #7fffd4; */
   --link-hover-color: #13547a;
@@ -153,8 +153,23 @@ strong {
   background-color: var(--section-bg-color);
 }
 
+#section_5 h2 {
+  color: var(--white-color);
+}
+
+#section_5 p,
+#section_5 span,
+#section_5 a,
+#section_5 hr {
+  color: var(--primary-color);
+}
+
+.section-bg1 {
+  background-color: var(--dark-color);
+}
+
 .section-overlay {
-  background-image: linear-gradient(15deg, #22223B 0%, #585C76 100%);
+  background-image: linear-gradient(15deg, #22223b 0%, #585c76 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -232,15 +247,14 @@ strong {
 }
 /* Normal state style */
 .btn {
-  color: #22223B; /* Original color for the button text */
+  color: #22223b; /* Original color for the button text */
   /* Add other styles as needed */
 }
 
 /* Hover state style */
 .btn:hover {
-  color: #FCFCFC; /* Black color for the button text on hover */
+  color: #fcfcfc; /* Black color for the button text on hover */
 }
-
 
 .custom-border-btn {
   background: transparent;
@@ -501,7 +515,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: linear-gradient(15deg, #22223B 0%, #4A4E69 100%);
+  background-image: linear-gradient(15deg, #22223b 0%, #4a4e69 100%);
   position: relative;
   overflow: hidden;
   padding-top: 150px;
@@ -533,8 +547,6 @@ strong {
   color: var(--white-color);
   max-width: 150px;
 }
-
-
 
 /*---------------------------------------
   TOPICS              
@@ -761,7 +773,7 @@ blockquote {
 
 .timeline-container .vertical-scrollable-timeline .list-progress {
   width: 8px;
-  height: 87%;
+  height: 80%;
   background-color: var(--primary-color);
   position: absolute;
   left: 52px;
@@ -859,8 +871,7 @@ blockquote {
 .faq-section .accordion-button {
   font-size: var(--h6-font-size);
   font-weight: var(--font-weight-semibold);
-  color: var(--white-color);
-
+  color: var(--dark-color);
 }
 
 .faq-section .accordion-item:first-of-type .accordion-button {
@@ -870,7 +881,6 @@ blockquote {
 .faq-section .accordion-button:not(.collapsed) {
   border-radius: var(--border-radius-large);
   box-shadow: none;
-  
 }
 
 .faq-section .accordion-body {
@@ -1137,7 +1147,7 @@ blockquote {
   }
 
   .timeline-container .vertical-scrollable-timeline .list-progress {
-    height: 75%;
+    height: 70%;
   }
 
   .timeline-container .vertical-scrollable-timeline li {
@@ -1154,6 +1164,7 @@ blockquote {
   .timeline-container .vertical-scrollable-timeline .list-progress {
     width: 5px;
     left: 30px;
+    height: 64%;
   }
   .timeline-container .vertical-scrollable-timeline li .icon-holder {
     left: 5px;
