@@ -3,25 +3,19 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
         <meta name="description" content="">
         <meta name="author" content="">
-
-        <link rel="icon" type="image/svg+xml" href="images/Bot.svg" />
+    
+        <link rel="icon" type="image/svg+xml" href="../images/Bot.svg" />
         <title>PSU-GPT</title>
-
-        <!-- CSS FILES -->        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
-                        
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link href="css/templatemo-topic-listing.css" rel="stylesheet">      
+    
+        <!-- Link to Noto Naskh Arabic font -->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap-icons.css" rel="stylesheet">
+        <link href="../css/templatemo-topic-listing.css" rel="stylesheet">
 <!--
 
 TemplateMo 590 topic listing
@@ -30,7 +24,33 @@ https://templatemo.com/tm-590-topic-listing
 
 -->
 
-
+    <style>
+        body {
+        direction: rtl;
+        text-align: right;
+      }
+      .timeline-container .vertical-scrollable-timeline li::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 8px;
+        background-color: transparent;
+        right: 52px;
+        z-index: 0;
+      }
+      .rtl {
+        direction: rtl; /* Set the overall direction to right-to-left */
+    }
+    
+    /* Adjust margins, paddings, and other styles as needed */
+    .rtl .list-progress {
+        /* Example styles for list-progress in RTL layout */
+        right: 0; /* Position the progress on the right side */
+    }
+    
+      
+      
+      </style>
     </head>
     
     <body id="top">
@@ -40,8 +60,8 @@ https://templatemo.com/tm-590-topic-listing
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
      
-                    <a href="#section_1">
-                        <img src="images/RIOTULogo.svg" style="height: 40px;" alt="">
+                    <a href="#section_1" class="logo-link">
+                        <img src="../images/RIOTULogo.svg" style="height: 40px;" alt="">
                     </a>
     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,25 +69,25 @@ https://templatemo.com/tm-590-topic-listing
                     </button>
     
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-lg-5 ms-lg-auto">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                                <a class="nav-link click-scroll" href="#section_1"><b>الرئيسية</b></a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_2">Features</a>
+                                <a class="nav-link click-scroll" href="#section_2"><b>المميزات</b></a>
                             </li>
     
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_3">Get Started</a>
+                                <a class="nav-link click-scroll" href="#section_3"><b>ابدأ</b></a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">FAQs</a>
+                                <a class="nav-link click-scroll" href="#section_4"><b>أسئلة شائعة</b></a>
                             </li>
     
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                                <a class="nav-link click-scroll" href="#section_5"><b>تواصل</b></a>
                             </li>
 
                         
@@ -88,12 +108,10 @@ https://templatemo.com/tm-590-topic-listing
                         <div class="col-lg-8 col-12 mx-auto text-center">
                             <h1 class="text-white text-center">PSU-GPT</h1>
 
-                            <h6 class="mt-4 text-white">Your personal AI assistant at Prince Sultan University</h6>
+                            <h6 class="mt-4 text-white">مساعدك الشخصي بالذكاء الاصطناعي في جامعة الأمير سلطان</h6>
 
                             <div>
-                                <a href="https://beta.psu-gpt.com/" target="_blank" class="btn custom-btn mt-4" style="position: relative; z-index: 9999;">
-                                    Get Started
-                                </a>
+                                <a href="https://beta.psu-gpt.com/" target="_blank" class="btn custom-btn mt-4" style="position: relative; z-index: 9999;">جربه الحين</a>
                             </div>
                             
                         </div>
@@ -132,11 +150,11 @@ https://templatemo.com/tm-590-topic-listing
 
                                     <div class="custom-block-overlay-text d-flex">
                                         <div>
-                                            <h5 class="text-center text-white mb-2 fs-2">About</h5>
+                                            <h5 class="text-center text-white mb-2 fs-2">حول</h5>
 
-                                            <p class="text-center text-white fs-6">PSU-GPT is a cutting-edge AI Chatbot developed exclusively for Prince Sultan University's community. Its sole purpose is to provide seamless support and engagement to faculty, students, and staff.</p>
+                                            <p class="text-center text-white fs-6">هو شاتبوت متطور يعمل بالذكاء الصناعي تم تطويره حصرياً لمجتمع جامعة الأمير سلطان. وهدفه الوحيد انه يقدم دعم  وتفاعل ممتاز لأعضاء الهيئة التدريسية والطلاب والموظفين بكل سلاسة ويسر PSU-GPT</p>
 
-                                            <img src="images/PSULogoWhite.svg" class="d-block mx-auto mt-4 pt-3" alt="">
+                                            <img src="../images/PSULogoWhite.svg" class="d-block mx-auto mt-4 pt-3" alt="">
                                         </div>
 
                                         <!-- <span class="badge bg-finance rounded-pill ms-auto">25</span> -->
@@ -175,14 +193,14 @@ https://templatemo.com/tm-590-topic-listing
                     <div class="row">
 
                         <div class="col-12 text-center">
-                            <h2 class="mb-4">Features</h1>
+                            <h2 class="mb-4">المميزات</h1>
                         </div>
 
                     </div>
                 </div>
 
                 <div class="container text-center mb-5">
-                    <p class="fs-5">PSU-GPT offers a wide range of features designed to simplify and enrich your university life</p>
+                    <p class="fs-5">PSU-GPT يوفر لك مجموعة واسعة من المزايا المصممة عشان تسهّل وتثري حياتك الجامعية</p>
                 </div>
 
                 <div class="container">
@@ -195,12 +213,12 @@ https://templatemo.com/tm-590-topic-listing
                                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                             <div class="custom-block bg-white shadow-lg text-center">
                                                 <a href="#section_2">
-                                                    <img src="images/Support.svg" class="custom-block-image mx-auto my-2" style="height: 100px; width: 100px; object-fit: contain;" alt="">
+                                                    <img src="../images/Support.svg" class="custom-block-image mx-auto my-2" style="height: 100px; width: 100px; object-fit: contain;" alt="">
                                                     <div class="d-flex">
                                                         <div>
-                                                            <h5 class="mb-3">24/7 Support</h5>
+                                                            <h5 class="mb-3">دعم على مدار الساعة، كل أيام الأسبوع</h5>
 
-                                                            <p class="mb-0 fs-6">PSU-GPT is available round the clock to answer your queries.</p>
+                                                            <p class="mb-0 fs-6">PSU-GPT مجهز ليخدمك على مدار الساعة ويجاوب على كل استفساراتك</p>
                                                         </div>
 
                                                     </div>
@@ -212,12 +230,12 @@ https://templatemo.com/tm-590-topic-listing
                                           <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                             <div class="custom-block bg-white shadow-lg text-center">
                                                 <a href="#section_2">
-                                                    <img src="images/Userfriendly.svg" class="custom-block-image mx-auto my-2" style="height: 100px; width: 100px; object-fit: contain;" alt="">
+                                                    <img src="../images/Userfriendly.svg" class="custom-block-image mx-auto my-2" style="height: 100px; width: 100px; object-fit: contain;" alt="">
                                                     <div class="d-flex">
                                                         <div>
-                                                            <h5 class="mb-3">User-friendly</h5>
+                                                            <h5 class="mb-3">سهل الاستخدام</h5>
 
-                                                            <p class="mb-0 fs-6">An intuitive and easy-to-use interface ensures all users can efficiently interact with PSU-GPT.</p>
+                                                            <p class="mb-0 fs-6">واجهة مريحة وسهلة الاستخدام تضمن لكل المستخدمين التفاعل بكفاءة مع PSU-GPT</p>
                                                         </div>
 
                                                     </div>
@@ -229,12 +247,12 @@ https://templatemo.com/tm-590-topic-listing
                                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                             <div class="custom-block bg-white shadow-lg text-center">
                                                 <a href="#section_2">
-                                                    <img src="images/SmartAdaptable.svg" class="custom-block-image mx-auto my-2" style="height: 100px; width: 100px; object-fit: contain;" alt="">
+                                                    <img src="../images/SmartAdaptable.svg" class="custom-block-image mx-auto my-2" style="height: 100px; width: 100px; object-fit: contain;" alt="">
                                                     <div class="d-flex">
                                                         <div>
-                                                            <h5 class="mb-3">Smart & Adaptable</h5>
+                                                            <h5 class="mb-3">ذكي ويتطابق مع إحتياجاتك</h5>
 
-                                                            <p class="mb-0 fs-6">PSU-GPT learns and improves from interactions, providing more accurate responses over time.</p>
+                                                            <p class="mb-0 fs-6">PSU-GPT يتعلم ويطور من تفاعلك معه، ويقدملك إجابات أدق مع الوقت</p>
                                                         </div>
 
                                                     </div>
@@ -246,12 +264,12 @@ https://templatemo.com/tm-590-topic-listing
                                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                             <div class="custom-block bg-white shadow-lg text-center">
                                                 <a href="#section_2">
-                                                    <img src="images/Resourceful.svg" class="custom-block-image mx-auto my-2" style="height: 100px; width: 100px; object-fit: contain;" alt="">
+                                                    <img src="../images/Resourceful.svg" class="custom-block-image mx-auto my-2" style="height: 100px; width: 100px; object-fit: contain;" alt="">
                                                     <div class="d-flex">
                                                         <div>
-                                                            <h5 class="mb-3">Resourceful</h5>
+                                                            <h5 class="mb-3">ماهر في استخدام الإمكانيات</h5>
 
-                                                            <p class="mb-0 fs-6">It can guide you through university resources, academics, events, and much more.</p>
+                                                            <p class="mb-0 fs-6">يقدر يوجّهك في استخدام مصادر الجامعة، والأمور الأكاديمية، والفعاليات، وأكثر من كذا بكثير</p>
                                                         </div>
 
                                                     </div>
@@ -271,77 +289,76 @@ https://templatemo.com/tm-590-topic-listing
 
             <section class="timeline-section section-padding" id="section_3">
                 <div class="section-overlay"></div>
-
+            
                 <div class="container">
                     <div class="row">
-
+            
                         <div class="col-10 mx-auto text-center">
-                            <h2 class="text-white mb-4">Get Started with PSU-GPT Today !</h2>
-                            <p class="text-white mb-5">Unlock the full potential of university resources and information within the PSU community, as you embark on a cutting-edge and efficient journey. Interact effortlessly with PSU-GPT in just three simple steps:</p>
+                            <h2 class="text-white mb-4">ابدأ الحين مع PSU-GPT !</h2>
+                            <p class="text-white mb-5">واستفيد لأقصى حد من موارد الجامعة والمعلومات داخل مجتمع جامعةالأمير سلطان وأنت تبدأ رحلة حديثة وفعّالة. تفاعل مع PSU-GPT بسهولة في ثلاث خطوات بسيطة:</p>
                         </div>
-
+            
                         <div class="col-lg-10 col-12 mx-auto">
-                            <div class="timeline-container">
-                                <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
-                                    <div class="list-progress">
+                            <div class="timeline-container" style="direction: rtl;">
+                                <ul class="vertical-scrollable-timeline " id="vertical-scrollable-timeline">
+                                    <div class="list-progress ">
                                         <div class="inner"></div>
                                     </div>
-
+            
                                     <li>
-                                        <h4 class="text-white mb-3">Open PSU-GPT</h4>
-
-                                        <p class="text-white">To get started, simply click on the link <a href="https://beta.psu-gpt.com" target="_blank" style="color: var(--link-hover-color);"><strong>https://beta.psu-gpt.com</strong></a>  , this will launch our powerful AI chatbot, PSU-GPT, that is ready to assist you with any questions or discussions you have in mind. Our Embark on an exceptional interactive journey, designed to deliver seamless experiences across diverse screen types and browsers. Our meticulously crafted, fully responsive design guarantees a consistently smooth user experience, offering unmatched accessibility and convenience at every interaction.
-                                           </p>
-
+                                        <h4 class="text-white mb-3">أفتح PSU-GPT</h4>
+            
+                                        <p class="text-white">عشان تبدأ، اضغط على الرابط. <a href="https://beta.psu-gpt.com" target="_blank" style="color: var(--link-hover-color);"><strong>https://beta.psu-gpt.com</strong></a>  ، راح يشغل لك البوت الذكي القوي، PSU-GPT، اللي جاهز يساعدك في أي استفسارات أو نقاشات تبيها. انطلق معانا في رحلة تفاعلية استثنائية، مصممة عشان تقدم لك تجربة سلسة على مختلف أنواع الشاشات والمتصفحات. تصميمنا المتجاوب بعناية يضمن لك تجربة مستخدم متسقة وسلسة، وبتوفير قابلية وراحة لا مثيل لها في كل تفاعل.</p>
+            
                                         <div class="icon-holder">
-                                          <i class="bi-search"></i>
+                                            <i class="bi-search "></i>
                                         </div>
                                     </li>
                                     
                                     <li>
-                                        <h4 class="text-white mb-3">Create Your Account or Log in</h4>
-
-                                        <p class="text-white">Next, you have the choice to either create an account or log in to your existing account. By signing up or logging in, you unlock the potential for personalized interactions, access to your conversation history, and the ability to track your engagement with PSU-GPT. Alternatively, you may also opt to continue as a guest, allowing seamless access to PSU-GPT's functionalities without the need for account credentials.</p>
-
+                                        <h4 class="text-white mb-3">سجل حسابك أو سجّل دخولك</h4>
+            
+                                        <p class="text-white">بعدين، عندك خيار إما تسوي حساب جديد أو تسجّل دخول في حسابك الحالي. لما تسجّل حساب أو تسجّل دخول، راح يتاح لك إمكانية التفاعل المُخصص، والوصول لتاريخ محادثاتك، والقدرة تتابع تفاعلك مع PSU-GPT. وبالإضافة لكذا، تقدر تختار تكمل كضيف، وتحصل على وصول سهل لخصائص PSU-GPT بدون ما تحتاج لمعلومات حساب.</p>
+            
                                         <div class="icon-holder">
-                                          <i class="bi-bookmark"></i>
+                                            <i class="bi-bookmark"></i>
                                         </div>
                                     </li>
-
+            
                                     <li>
-                                        <h4 class="text-white mb-3">Start Exploring</h4>
-
-                                        <p class="text-white">You're all set to embark on a seamless interactive journey with PSU-GPT! Get ready to engage by typing your questions and receiving accurate responses instantly. Your feedback is incredibly valuable to us! Express your satisfaction with helpful answers using the "Positive Thumbs Up" button, where you can rate the response from Fair to Excellent and provide additional comments. Should you encounter any issues, don't hesitate to use the "Negative Thumbs Down" to help us improve PSU-GPT. We highly value your feedback as we continuously strive to enhance your experience. For any questions, our support team is here to assist you. Happy interacting!</p>
-
+                                        <h4 class="text-white mb-3">ابدأ استكشاف</h4>
+            
+                                        <p class="text-white">أنت جاهز لبداية رحلة تفاعلية سلسة مع PSU-GPT! استعد للتفاعل من خلال كتابة أسئلتك واستقبال إجابات دقيقة على الفور. تعليقاتك مهمة جداً بالنسبة لنا! عبّر عن رضاك عن طريق زر "إعجاب إيجابي"، حيث يمكنك تقديم تقييم للإجابة من جيدة إلى ممتازة وإضافة تعليقات إضافية. إذا واجهت أي مشكلة، لا تتردد في استخدام زر "إعجاب سلبي" لمساعدتنا في تحسين PSU-GPT. نقدّر تقديراً كبيراً لتعليقاتك ونسعى باستمرار لتحسين تجربتك. إذا كانت لديك أي أسئلة، فإن فريق الدعم هنا لمساعدتك. تفاعل سعيد!</p>
+            
                                         <div class="icon-holder">
-                                          <i class="bi-book"></i>
+                                            <i class="bi-book"></i>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-
+            
                         <div class="col-12 text-center mt-5">
-                                <a href="https://beta.psu-gpt.com/" target="_blank" class="btn custom-btn">Check out PSU-GPT</a>
+                            <a href="https://beta.psu-gpt.com/" target="_blank" class="btn custom-btn">جرب PSU-GPT</a>
                         </div>
                         
                     </div>
                 </div>
             </section>
-
+            
 
             <section class="faq-section section-padding" id="section_4">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-6 col-12">
-                            <h2 class="mb-4">Frequently Asked Questions</h2>
+                            <h2 class="mb-4">الأسئلة الشائعة</h2>
                         </div>
 
                         <div class="clearfix"></div>
 
                         <div class="col-lg-5 col-12">
-                            <img src="images/faq_graphic.jpg" class="img-fluid rounded-5" alt="FAQs">
+                            <img src="../images/faq_graphic.jpg" class="img-fluid rounded-5" alt="FAQs">
                         </div>
 
                         <div class="col-lg-6 col-12 m-auto">
@@ -349,13 +366,13 @@ https://templatemo.com/tm-590-topic-listing
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Who holds the position of President at Prince Sultan University?
+                                            من هو الشخص الذي يتولى منصب رئيس جامعة الأمير سلطان؟
                                         </button>
                                     </h2>
 
                                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            The position of President at Prince Sultan University is held by Dr. Ahmed Yamani.
+                                            منصب رئيس جامعة الأمير سلطان يتولاه الدكتور أحمد اليماني.
                                         </div>
                                     </div>
                                 </div>
@@ -363,13 +380,13 @@ https://templatemo.com/tm-590-topic-listing
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            What are the current undergraduate programs available at Prince Sultan University?
+                                           ما هي البرامج الجامعية الحالية المتاحة في جامعة الأمير سلطان؟
                                     </button>
                                     </h2>
 
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            As of my knowledge in 2023, The undergraduate programs available at Prince Sultan University are Accounting, Aviation Management, Communications, Computer Science, Economics, Production and Management, Electronic Information and Communication, Finance, Humanities, Law, and Software Engineering.
+                                            حسب معرفتي حتى عام 2023، البرامج الجامعية للبكالوريوس المتاحة في جامعة الأمير سلطان تشمل التخصصات التالية: المحاسبة، إدارة الطيران، الاتصالات، علوم الحاسوب، الاقتصاد، إنتاج وإدارة، الإلكترونيات والمعلوماتية، التمويل، العلوم الإنسانية، القانون، وهندسة البرمجيات.
                                         </div>
                                     </div>
                                 </div>
@@ -377,13 +394,13 @@ https://templatemo.com/tm-590-topic-listing
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Where can i find the students council at PSU?
+                                            أين يمكنني العثور على مجلس الطلاب في جامعة الأمير سلطان؟
                                     </button>
                                     </h2>
 
                                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            The students council at PSU is located in Building 101, Floor 1, in rooms E1.045-E1.047.
+                                            مجلس الطلاب في جامعة الأمير سلطان يقع في المبنى رقم 101، الطابق 1، في الغرف E1.045 إلى E1.047.
                                         </div>
                                     </div>
                                 </div>
@@ -400,7 +417,7 @@ https://templatemo.com/tm-590-topic-listing
                     <div class="row">
 
                         <div class="col-lg-12 col-12 text-center">
-                            <h2 class="mb-5">Get in touch</h2>
+                            <h2 class="mb-5">تواصل معنا</h2>
                         </div>
 
                         <div class="col-lg-5 col-12 mb-4 mb-lg-0 ms-auto pe-4">
@@ -408,25 +425,25 @@ https://templatemo.com/tm-590-topic-listing
                         </div>
 
                         <div class="col-lg-5 col-md-6 col-12 mb-3 mb-lg- mb-md-0 me-auto ps-4">
-                            <h4 class="mb-3">RIOTU Lab</h4>
+                            <h4 class="mb-3">معمل RIOTU</h4>
 
                             <p>Prince Nasir Ibn Farhan Al Saud St. Salah Al Din Dist. Riyadh 12435, Saudi Arabia.</p>
 
                             <hr>
 
                             <p class="d-flex align-items-center mb-1 fs-6">
-                                <span class="me-2">Phone</span>
+                                <span class="me-2">هاتف&nbsp;</span>
 
-                                <a href="tel: 0114948888" class="site-footer-link">
-                                    0114948888
+                                <a href="tel: ٠١١٤٩٤٨٨٨٨" class=" site-footer-link">
+                            : ٠١١٤٩٤٨٨٨٨ &nbsp;
                                 </a>
                             </p>
 
                             <p class="d-flex align-items-center fs-6">
-                                <span class="me-2">Website</span>
+                                <span class="me-2">الموقع الآكتروني&nbsp;</span>
 
                                 <a href="http://www.psu.edu.sa/" target="_blank" class="site-footer-link">
-                                    http://www.psu.edu.sa/
+                                    : http://www.psu.edu.sa
                                 </a>
                             </p>
                         </div>
@@ -442,60 +459,60 @@ https://templatemo.com/tm-590-topic-listing
 
                     <div class="col-lg-3 col-12 mb-4 pb-2">
                         <a href="#section_1">
-                            <img src="images/RIOTULogoFooter.svg" style="height: 40px;" alt="">
+                            <img src="../images/RIOTULogoFooter.svg" style="height: 40px;" alt="">
                         </a>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-6">
-                        <h6 class="site-footer-title mb-3">Links</h6>
+                        <h6 class="site-footer-title mb-3">الروابط</h6>
 
                         <ul class="site-footer-links">
                             <li class="site-footer-link-item">
-                                <a href="#section_1" class="site-footer-link">Home</a>
+                                <a href="#section_1" class="site-footer-link">الرئيسية</a>
                             </li>
 
                             <li class="site-footer-link-item">
-                                <a href="#section_2" class="site-footer-link">Features</a>
+                                <a href="#section_2" class="site-footer-link">المميزات</a>
                             </li>
 
                             <li class="site-footer-link-item">
-                                <a href="#section_3" class="site-footer-link">Get Started</a>
+                                <a href="#section_3" class="site-footer-link">ابدأ</a>
                             </li>
 
                             <li class="site-footer-link-item">
-                                <a href="#section_4" class="site-footer-link">FAQs</a>
+                                <a href="#section_4" class="site-footer-link">أسئلة شائعة</a>
                             </li>
 
                             <li class="site-footer-link-item">
-                                <a href="#section_5" class="site-footer-link">Contact</a>
+                                <a href="#section_5" class="site-footer-link">تواصل</a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
-                        <h6 class="site-footer-title mb-3">Social Media</h6>
+                        <h6 class="site-footer-title mb-3">التواصل الأجتماعي</h6>
 
                         <p class="text-white d-flex">
                             <a href="https://twitter.com/riotulab?s=20" target="_blank" class="site-footer-link">
-                                Twitter
+                                توتير
                             </a>
                         </p>
 
                         <p class="text-white d-flex">
                             <a href="https://www.youtube.com/channel/UCJypzBiFE8C793Q_PC6X8IQ?view_as=subscriber" target="_blank" class="site-footer-link">
-                                Youtube
+                                يوتيوب
                             </a>
                         </p>
 
                         <p class="text-white d-flex">
                             <a href="https://www.facebook.com/groups/1826538040795892/" target="_blank" class="site-footer-link">
-                                Facebook
+                                فيسبوك
                             </a>
                         </p>
 
                         <p class="text-white d-flex">
                             <a href="https://www.linkedin.com/in/anis-koubaa-84aa4344/" target="_blank" class="site-footer-link">
-                                Linkedin
+                                لينكدان
                             </a>
                         </p>
                     </div>
@@ -514,8 +531,8 @@ https://templatemo.com/tm-590-topic-listing
                             </ul>
                         </div> -->
 
-                        <p class="copyright-text">Copyright © 2023 RIOTU Team.</p>
-                        <p class="copyright-text">All rights reserved.</p>
+                        <p class="copyright-text">حقوق النشر © 2023 فريق RIOTU.</p>
+                        <p class="copyright-text">جميع الحقوق محفوظة.</p>
                         
                     </div>
 
@@ -525,12 +542,12 @@ https://templatemo.com/tm-590-topic-listing
 
 
         <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/custom.js"></script>
-        <script type="text/javascript" src="js/particles.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery.sticky.js"></script>
+        <script src="../js/click-scroll.js"></script>
+        <script src="../js/custom.js"></script>
+        <script type="text/javascript" src="../js/particles.js"></script>
+        <script type="text/javascript" src="../js/app.js"></script>
     </body>
 </html>
